@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.vercel/
+*.db
+data/raw/
+data/processed/
+data/analysis/
+logs/
+.env*

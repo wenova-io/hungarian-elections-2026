@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "collected_at": "2026-04-13T12:00:00Z",
+    "coverage_pct": 100,
+    "source": "Wikipedia / NVI 2022",
+    "notes": "Aggregate constituency data. Fidesz-KDNP won 87 of 106 OEVKs, opposition alliance (Egységben) won 19. Individual OEVK-level vote data not available from Wikipedia summary — NVI API required for full breakdown."
+  },
+  "summary": {
+    "total_constituencies": 106,
+    "fidesz_kdnp_wins": 87,
+    "opposition_wins": 19,
+    "opposition_alliance": "Egységben Magyarországért (MSZP, DK, Jobbik, Momentum, LMP, Párbeszéd)"
+  },
+  "constituencies_by_county": [
+    {"county": "Budapest", "total_oevk": 18, "fidesz_wins_estimated": 4, "opposition_wins_estimated": 14, "is_estimated": true},
+    {"county": "Bács-Kiskun", "total_oevk": 6, "fidesz_wins_estimated": 6, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Baranya", "total_oevk": 4, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 1, "is_estimated": true},
+    {"county": "Békés", "total_oevk": 4, "fidesz_wins_estimated": 4, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Borsod-Abaúj-Zemplén", "total_oevk": 7, "fidesz_wins_estimated": 7, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Csongrád-Csanád", "total_oevk": 4, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 1, "is_estimated": true},
+    {"county": "Fejér", "total_oevk": 5, "fidesz_wins_estimated": 5, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Győr-Moson-Sopron", "total_oevk": 5, "fidesz_wins_estimated": 5, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Hajdú-Bihar", "total_oevk": 6, "fidesz_wins_estimated": 5, "opposition_wins_estimated": 1, "is_estimated": true},
+    {"county": "Heves", "total_oevk": 3, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Jász-Nagykun-Szolnok", "total_oevk": 4, "fidesz_wins_estimated": 4, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Komárom-Esztergom", "total_oevk": 3, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Nógrád", "total_oevk": 2, "fidesz_wins_estimated": 2, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Pest", "total_oevk": 12, "fidesz_wins_estimated": 10, "opposition_wins_estimated": 2, "is_estimated": true},
+    {"county": "Somogy", "total_oevk": 4, "fidesz_wins_estimated": 4, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Szabolcs-Szatmár-Bereg", "total_oevk": 6, "fidesz_wins_estimated": 6, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Tolna", "total_oevk": 3, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Vas", "total_oevk": 3, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Veszprém", "total_oevk": 4, "fidesz_wins_estimated": 4, "opposition_wins_estimated": 0, "is_estimated": true},
+    {"county": "Zala", "total_oevk": 3, "fidesz_wins_estimated": 3, "opposition_wins_estimated": 0, "is_estimated": true}
+  ]
+}

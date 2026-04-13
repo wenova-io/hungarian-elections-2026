@@ -1,0 +1,90 @@
+{
+  "party_counts": {
+    "1990": 6,
+    "1994": 6,
+    "1998": 5,
+    "2002": 5,
+    "2006": 4,
+    "2010": 4,
+    "2014": 4,
+    "2018": 7,
+    "2022": 5,
+    "2026": 3
+  },
+  "gallagher_indices": {
+    "1990": 13.04,
+    "1994": 15.24,
+    "1998": 6.61,
+    "2002": 7.4,
+    "2006": 4.06,
+    "2010": 11.93,
+    "2014": 17.42,
+    "2018": 13.6,
+    "2022": 10.97,
+    "2026": 13.36
+  },
+  "seat_totals": {
+    "1990": {
+      "sum": 375,
+      "expected": 386,
+      "matches": false
+    },
+    "1994": {
+      "sum": 384,
+      "expected": 386,
+      "matches": false
+    },
+    "1998": {
+      "sum": 368,
+      "expected": 386,
+      "matches": false
+    },
+    "2002": {
+      "sum": 385,
+      "expected": 386,
+      "matches": false
+    },
+    "2006": {
+      "sum": 379,
+      "expected": 386,
+      "matches": false
+    },
+    "2010": {
+      "sum": 385,
+      "expected": 386,
+      "matches": false
+    },
+    "2014": {
+      "sum": 199,
+      "expected": 199,
+      "matches": true
+    },
+    "2018": {
+      "sum": 196,
+      "expected": 199,
+      "matches": false
+    },
+    "2022": {
+      "sum": 199,
+      "expected": 199,
+      "matches": true
+    },
+    "2026": {
+      "sum": 199,
+      "expected": 199,
+      "matches": true
+    }
+  },
+  "row_counts": {
+    "elections": 10,
+    "parties": 21,
+    "party_results": 49,
+    "constituencies": 106,
+    "constituency_results": 0,
+    "constituency_swing": 0,
+    "gallagher_index": 10,
+    "turnout_intervals": 13,
+    "hypothetical_pr": 49
+  },
+  "validation_passed": true
+}

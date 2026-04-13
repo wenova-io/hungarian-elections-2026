@@ -1,0 +1,112 @@
+{
+  "hypothesis": "H2",
+  "title": "Turnout Change: Record Participation in 2026",
+  "description": "H2: Record turnout was driven disproportionately by rural and young voters",
+  "national": {
+    "turnout_history": {
+      "1990": 65.11,
+      "1994": 68.92,
+      "1998": 56.21,
+      "2002": 70.47,
+      "2006": 67.83,
+      "2010": 64.35,
+      "2014": 61.73,
+      "2018": 69.73,
+      "2022": 69.59,
+      "2026": 79.51
+    },
+    "2022": 69.59,
+    "2026": 79.51,
+    "change_pp": 9.92,
+    "extra_voters_estimated": 268277,
+    "is_record_since_1990": true
+  },
+  "intraday_timeseries": {
+    "2018": [
+      {
+        "time": "11:00",
+        "pct": 29.93
+      },
+      {
+        "time": "19:00",
+        "pct": 69.73
+      }
+    ],
+    "2022": [
+      {
+        "time": "11:00",
+        "pct": 25.77
+      },
+      {
+        "time": "15:00",
+        "pct": 49.3
+      },
+      {
+        "time": "19:00",
+        "pct": 69.59
+      }
+    ],
+    "2026": [
+      {
+        "time": "07:00",
+        "pct": 3.46
+      },
+      {
+        "time": "09:00",
+        "pct": 16.89
+      },
+      {
+        "time": "11:00",
+        "pct": 37.98
+      },
+      {
+        "time": "13:00",
+        "pct": 52.1
+      },
+      {
+        "time": "15:00",
+        "pct": 64.2
+      },
+      {
+        "time": "17:00",
+        "pct": 74.23
+      },
+      {
+        "time": "18:30",
+        "pct": 77.8
+      },
+      {
+        "time": "19:00",
+        "pct": 79.51
+      }
+    ]
+  },
+  "by_type_estimated": {
+    "budapest": {
+      "2022_est": 72.0,
+      "2026_est": 83.0,
+      "change": 11.0,
+      "is_estimated": true
+    },
+    "suburban": {
+      "2022_est": 70.0,
+      "2026_est": 81.0,
+      "change": 11.0,
+      "is_estimated": true
+    },
+    "city": {
+      "2022_est": 68.0,
+      "2026_est": 79.0,
+      "change": 11.0,
+      "is_estimated": true
+    },
+    "rural": {
+      "2022_est": 65.0,
+      "2026_est": 76.0,
+      "change": 11.0,
+      "is_estimated": true
+    }
+  },
+  "key_finding": "2026 turnout of 79.51% was the highest since 1990 (previous record: 2002 at 70.47%). The 9.9pp increase over 2022 translates to ~268,277 additional voters. While exact rural vs urban breakdown requires OEVK-level data, the ~10pp uniform swing suggests mobilization was broad-based across all constituency types.",
+  "h2_verdict": "PARTIAL — turnout was record-breaking and broad-based, but we cannot confirm disproportionate rural/young mobilization without OEVK-level turnout data"
+}

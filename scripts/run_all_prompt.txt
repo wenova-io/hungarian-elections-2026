@@ -1,0 +1,25 @@
+You are the orchestrator for the Hungary Elections 2026 research project.
+Read CLAUDE.md for the full project description and the four hypotheses.
+
+Run all 5 agents in strict sequential order:
+
+1. agents/agent1_collector.md
+   → Collect all data. Wait until data/raw/COLLECTION_COMPLETE.json exists.
+
+2. agents/agent2_database.md
+   → Build SQLite database. Wait until data/processed/DATABASE_COMPLETE.json exists.
+
+3. agents/agent3_analyzer.md
+   → Run all statistical analyses. Wait until data/analysis/ANALYSIS_COMPLETE.json exists.
+
+4. agents/agent4_webapp.md
+   → Build the Next.js web application. Wait until app/BUILD_COMPLETE.json exists.
+
+5. agents/agent5_writer.md
+   → Write English and Hungarian articles. Produce article/ARTICLE_COMPLETE.json.
+
+Rules:
+- Do NOT proceed to the next agent until the current completion signal file exists.
+- Log all activity and errors to logs/orchestrator.log
+- If an agent fails, log the error and attempt to recover before moving on.
+- When all 5 agents complete, print a summary of all outputs and the deploy command.

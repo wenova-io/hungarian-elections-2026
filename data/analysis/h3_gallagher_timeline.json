@@ -1,0 +1,90 @@
+{
+  "hypothesis": "H3",
+  "title": "Gallagher Disproportionality Index 1990-2026",
+  "description": "LSq index measures how disproportional seats are vs votes. Higher = more unfair.",
+  "data": [
+    {
+      "year": 1990,
+      "lsq_index": 13.04,
+      "winner_vote_pct": 24.73,
+      "winner_seat_pct": 42.49,
+      "winner_distortion": 17.76,
+      "winner_party": "MDF"
+    },
+    {
+      "year": 1994,
+      "lsq_index": 15.24,
+      "winner_vote_pct": 32.99,
+      "winner_seat_pct": 54.15,
+      "winner_distortion": 21.16,
+      "winner_party": "MSZP"
+    },
+    {
+      "year": 1998,
+      "lsq_index": 6.61,
+      "winner_vote_pct": 29.48,
+      "winner_seat_pct": 38.34,
+      "winner_distortion": 8.86,
+      "winner_party": "Fidesz"
+    },
+    {
+      "year": 2002,
+      "lsq_index": 7.4,
+      "winner_vote_pct": 41.07,
+      "winner_seat_pct": 48.7,
+      "winner_distortion": 7.63,
+      "winner_party": "Fidesz-MDF"
+    },
+    {
+      "year": 2006,
+      "lsq_index": 4.06,
+      "winner_vote_pct": 43.21,
+      "winner_seat_pct": 48.17,
+      "winner_distortion": 4.96,
+      "winner_party": "MSZP"
+    },
+    {
+      "year": 2010,
+      "lsq_index": 11.93,
+      "winner_vote_pct": 52.73,
+      "winner_seat_pct": 68.13,
+      "winner_distortion": 15.4,
+      "winner_party": "Fidesz-KDNP"
+    },
+    {
+      "year": 2014,
+      "lsq_index": 17.42,
+      "winner_vote_pct": 44.87,
+      "winner_seat_pct": 66.83,
+      "winner_distortion": 21.96,
+      "winner_party": "Fidesz-KDNP"
+    },
+    {
+      "year": 2018,
+      "lsq_index": 13.6,
+      "winner_vote_pct": 49.27,
+      "winner_seat_pct": 66.83,
+      "winner_distortion": 17.56,
+      "winner_party": "Fidesz-KDNP"
+    },
+    {
+      "year": 2022,
+      "lsq_index": 10.97,
+      "winner_vote_pct": 54.13,
+      "winner_seat_pct": 67.84,
+      "winner_distortion": 13.71,
+      "winner_party": "Fidesz-KDNP"
+    },
+    {
+      "year": 2026,
+      "lsq_index": 13.36,
+      "winner_vote_pct": 53.65,
+      "winner_seat_pct": 69.35,
+      "winner_distortion": 15.7,
+      "winner_party": "Tisza"
+    }
+  ],
+  "fidesz_era_average_2010_2022": 13.48,
+  "finding": "The 2026 Gallagher index of 13.4 is comparable to the Fidesz-era average of 13.5 (2010-2022), supporting H3.",
+  "h3_verdict": "SUPPORTED"
+}

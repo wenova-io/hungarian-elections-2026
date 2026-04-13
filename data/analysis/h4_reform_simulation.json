@@ -1,0 +1,95 @@
+{
+  "hypothesis": "H4",
+  "title": "What If? Alternative Electoral Systems in 2026",
+  "description": "H4: A fairer proportional system would NOT have given Tisza a supermajority",
+  "actual_2026": {
+    "Tisza": {
+      "votes_pct": 53.65,
+      "seats": 138,
+      "seats_pct": 69.35
+    },
+    "Fidesz-KDNP": {
+      "votes_pct": 37.75,
+      "seats": 55,
+      "seats_pct": 27.64
+    },
+    "Mi Hazánk": {
+      "votes_pct": 5.9,
+      "seats": 6,
+      "seats_pct": 3.02
+    }
+  },
+  "supermajority_threshold": 133,
+  "scenarios": [
+    {
+      "name": "Pure Proportional Representation",
+      "description": "All 199 seats allocated by list vote percentage (D'Hondt method simplified)",
+      "results": {
+        "Tisza": {
+          "seats": 110,
+          "seats_pct": 55.3,
+          "has_supermajority": false
+        },
+        "Fidesz-KDNP": {
+          "seats": 77,
+          "seats_pct": 38.7,
+          "has_supermajority": false
+        },
+        "Mi Hazánk": {
+          "seats": 12,
+          "seats_pct": 6.0,
+          "has_supermajority": false
+        }
+      },
+      "tisza_governs": true,
+      "tisza_supermajority": false
+    },
+    {
+      "name": "German-style Mixed Member Proportional (MMP)",
+      "description": "106 FPTP seats + compensatory list seats to achieve proportionality",
+      "results": {
+        "Tisza": {
+          "seats": 110,
+          "seats_pct": 55.3,
+          "has_supermajority": false
+        },
+        "Fidesz-KDNP": {
+          "seats": 77,
+          "seats_pct": 38.7
+        },
+        "Mi Hazánk": {
+          "seats": 12,
+          "seats_pct": 6.0
+        }
+      },
+      "tisza_governs": true,
+      "tisza_supermajority": false
+    },
+    {
+      "name": "Current system but 70% supermajority threshold",
+      "description": "Keep mixed system, raise supermajority from 2/3 to 70% of seats (140/199)",
+      "results": {
+        "Tisza": {
+          "votes_pct": 53.65,
+          "seats": 138,
+          "seats_pct": 69.35
+        },
+        "Fidesz-KDNP": {
+          "votes_pct": 37.75,
+          "seats": 55,
+          "seats_pct": 27.64
+        },
+        "Mi Hazánk": {
+          "votes_pct": 5.9,
+          "seats": 6,
+          "seats_pct": 3.02
+        }
+      },
+      "threshold_seats": 140,
+      "tisza_governs": true,
+      "tisza_supermajority": false
+    }
+  ],
+  "h4_verdict": "STRONGLY SUPPORTED — under pure PR or German MMP, Tisza governs but cannot unilaterally amend the constitution. Only the current distorting system enables supermajority from ~53% votes.",
+  "reform_recommendation": "Adopt German-style MMP with compensatory seats. This preserves local representation while preventing supermajorities from ~50% vote shares."
+}

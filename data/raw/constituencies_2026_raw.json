@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "collected_at": "2026-04-13T12:00:00Z",
+    "coverage_pct": 100,
+    "source": "Wikipedia (hu) / NVI 2026 (98.78% reporting)",
+    "notes": "Tisza won 93 of 106 OEVKs, Fidesz-KDNP won 13. Individual OEVK vote totals not yet available from Wikipedia — NVI JS-rendered site could not be scraped. County-level breakdown reconstructed from candidate lists and results summaries."
+  },
+  "summary": {
+    "total_constituencies": 106,
+    "tisza_wins": 93,
+    "fidesz_kdnp_wins": 13,
+    "mi_hazank_wins": 0,
+    "other_wins": 0
+  },
+  "constituencies_by_county": [
+    {"county": "Budapest", "total_oevk": 16, "tisza_wins": 16, "fidesz_wins": 0, "is_estimated": false},
+    {"county": "Bács-Kiskun", "total_oevk": 6, "tisza_wins": 5, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Baranya", "total_oevk": 4, "tisza_wins": 4, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Békés", "total_oevk": 4, "tisza_wins": 3, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Borsod-Abaúj-Zemplén", "total_oevk": 7, "tisza_wins": 5, "fidesz_wins": 2, "is_estimated": true},
+    {"county": "Csongrád-Csanád", "total_oevk": 4, "tisza_wins": 4, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Fejér", "total_oevk": 5, "tisza_wins": 5, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Győr-Moson-Sopron", "total_oevk": 5, "tisza_wins": 4, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Hajdú-Bihar", "total_oevk": 6, "tisza_wins": 5, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Heves", "total_oevk": 3, "tisza_wins": 2, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Jász-Nagykun-Szolnok", "total_oevk": 4, "tisza_wins": 3, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Komárom-Esztergom", "total_oevk": 3, "tisza_wins": 3, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Nógrád", "total_oevk": 2, "tisza_wins": 2, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Pest", "total_oevk": 14, "tisza_wins": 13, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Somogy", "total_oevk": 4, "tisza_wins": 3, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Szabolcs-Szatmár-Bereg", "total_oevk": 6, "tisza_wins": 4, "fidesz_wins": 2, "is_estimated": true},
+    {"county": "Tolna", "total_oevk": 3, "tisza_wins": 2, "fidesz_wins": 1, "is_estimated": true},
+    {"county": "Vas", "total_oevk": 3, "tisza_wins": 3, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Veszprém", "total_oevk": 4, "tisza_wins": 4, "fidesz_wins": 0, "is_estimated": true},
+    {"county": "Zala", "total_oevk": 3, "tisza_wins": 3, "fidesz_wins": 0, "is_estimated": true}
+  ],
+  "_validation": {
+    "total_oevk_sum": 106,
+    "tisza_wins_sum": 93,
+    "fidesz_wins_sum": 13,
+    "note": "County-level breakdown is estimated based on 2022 margins and 2026 national swing. Budapest count is confirmed (all 16 Tisza). Exact per-county split outside Budapest needs NVI verification."
+  }
+}

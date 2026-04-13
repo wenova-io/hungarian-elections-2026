@@ -1,0 +1,529 @@
+{
+  "hypothesis": "H3 + H4",
+  "title": "Seat vs Vote Disparity Across All Elections",
+  "data": {
+    "1990": [
+      {
+        "year": 1990,
+        "short_name": "MDF",
+        "actual_seats": 164,
+        "actual_seat_pct": 42.49,
+        "proportional_seats": 113,
+        "proportional_seat_pct": 29.27,
+        "difference": 51,
+        "total_seats": 386
+      },
+      {
+        "year": 1990,
+        "short_name": "SZDSZ",
+        "actual_seats": 92,
+        "actual_seat_pct": 23.83,
+        "proportional_seats": 98,
+        "proportional_seat_pct": 25.39,
+        "difference": -6,
+        "total_seats": 386
+      },
+      {
+        "year": 1990,
+        "short_name": "FKGP",
+        "actual_seats": 44,
+        "actual_seat_pct": 11.4,
+        "proportional_seats": 54,
+        "proportional_seat_pct": 13.99,
+        "difference": -10,
+        "total_seats": 386
+      },
+      {
+        "year": 1990,
+        "short_name": "MSZP",
+        "actual_seats": 33,
+        "actual_seat_pct": 8.55,
+        "proportional_seats": 50,
+        "proportional_seat_pct": 12.95,
+        "difference": -17,
+        "total_seats": 386
+      },
+      {
+        "year": 1990,
+        "short_name": "Fidesz",
+        "actual_seats": 21,
+        "actual_seat_pct": 5.44,
+        "proportional_seats": 41,
+        "proportional_seat_pct": 10.62,
+        "difference": -20,
+        "total_seats": 386
+      },
+      {
+        "year": 1990,
+        "short_name": "KDNP",
+        "actual_seats": 21,
+        "actual_seat_pct": 5.44,
+        "proportional_seats": 30,
+        "proportional_seat_pct": 7.77,
+        "difference": -9,
+        "total_seats": 386
+      }
+    ],
+    "1994": [
+      {
+        "year": 1994,
+        "short_name": "MSZP",
+        "actual_seats": 209,
+        "actual_seat_pct": 54.15,
+        "proportional_seats": 146,
+        "proportional_seat_pct": 37.82,
+        "difference": 63,
+        "total_seats": 386
+      },
+      {
+        "year": 1994,
+        "short_name": "SZDSZ",
+        "actual_seats": 69,
+        "actual_seat_pct": 17.88,
+        "proportional_seats": 87,
+        "proportional_seat_pct": 22.54,
+        "difference": -18,
+        "total_seats": 386
+      },
+      {
+        "year": 1994,
+        "short_name": "MDF",
+        "actual_seats": 38,
+        "actual_seat_pct": 9.84,
+        "proportional_seats": 52,
+        "proportional_seat_pct": 13.47,
+        "difference": -14,
+        "total_seats": 386
+      },
+      {
+        "year": 1994,
+        "short_name": "FKGP",
+        "actual_seats": 26,
+        "actual_seat_pct": 6.74,
+        "proportional_seats": 39,
+        "proportional_seat_pct": 10.1,
+        "difference": -13,
+        "total_seats": 386
+      },
+      {
+        "year": 1994,
+        "short_name": "KDNP",
+        "actual_seats": 22,
+        "actual_seat_pct": 5.7,
+        "proportional_seats": 31,
+        "proportional_seat_pct": 8.03,
+        "difference": -9,
+        "total_seats": 386
+      },
+      {
+        "year": 1994,
+        "short_name": "Fidesz",
+        "actual_seats": 20,
+        "actual_seat_pct": 5.18,
+        "proportional_seats": 31,
+        "proportional_seat_pct": 8.03,
+        "difference": -11,
+        "total_seats": 386
+      }
+    ],
+    "1998": [
+      {
+        "year": 1998,
+        "short_name": "Fidesz",
+        "actual_seats": 148,
+        "actual_seat_pct": 38.34,
+        "proportional_seats": 128,
+        "proportional_seat_pct": 33.16,
+        "difference": 20,
+        "total_seats": 386
+      },
+      {
+        "year": 1998,
+        "short_name": "MSZP",
+        "actual_seats": 134,
+        "actual_seat_pct": 34.72,
+        "proportional_seats": 143,
+        "proportional_seat_pct": 37.05,
+        "difference": -9,
+        "total_seats": 386
+      },
+      {
+        "year": 1998,
+        "short_name": "FKGP",
+        "actual_seats": 48,
+        "actual_seat_pct": 12.44,
+        "proportional_seats": 57,
+        "proportional_seat_pct": 14.77,
+        "difference": -9,
+        "total_seats": 386
+      },
+      {
+        "year": 1998,
+        "short_name": "SZDSZ",
+        "actual_seats": 24,
+        "actual_seat_pct": 6.22,
+        "proportional_seats": 33,
+        "proportional_seat_pct": 8.55,
+        "difference": -9,
+        "total_seats": 386
+      },
+      {
+        "year": 1998,
+        "short_name": "MIÉP",
+        "actual_seats": 14,
+        "actual_seat_pct": 3.63,
+        "proportional_seats": 24,
+        "proportional_seat_pct": 6.22,
+        "difference": -10,
+        "total_seats": 386
+      }
+    ],
+    "2002": [
+      {
+        "year": 2002,
+        "short_name": "Fidesz-MDF",
+        "actual_seats": 188,
+        "actual_seat_pct": 48.7,
+        "proportional_seats": 164,
+        "proportional_seat_pct": 42.49,
+        "difference": 24,
+        "total_seats": 386
+      },
+      {
+        "year": 2002,
+        "short_name": "MSZP",
+        "actual_seats": 178,
+        "actual_seat_pct": 46.11,
+        "proportional_seats": 167,
+        "proportional_seat_pct": 43.26,
+        "difference": 11,
+        "total_seats": 386
+      },
+      {
+        "year": 2002,
+        "short_name": "SZDSZ",
+        "actual_seats": 19,
+        "actual_seat_pct": 4.92,
+        "proportional_seats": 22,
+        "proportional_seat_pct": 5.7,
+        "difference": -3,
+        "total_seats": 386
+      },
+      {
+        "year": 2002,
+        "short_name": "MIÉP",
+        "actual_seats": 0,
+        "actual_seat_pct": 0.0,
+        "proportional_seats": 17,
+        "proportional_seat_pct": 4.4,
+        "difference": -17,
+        "total_seats": 386
+      },
+      {
+        "year": 2002,
+        "short_name": "Centrum-KDNP",
+        "actual_seats": 0,
+        "actual_seat_pct": 0.0,
+        "proportional_seats": 16,
+        "proportional_seat_pct": 4.15,
+        "difference": -16,
+        "total_seats": 386
+      }
+    ],
+    "2006": [
+      {
+        "year": 2006,
+        "short_name": "MSZP",
+        "actual_seats": 186,
+        "actual_seat_pct": 48.17,
+        "proportional_seats": 172,
+        "proportional_seat_pct": 44.56,
+        "difference": 14,
+        "total_seats": 386
+      },
+      {
+        "year": 2006,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 164,
+        "actual_seat_pct": 42.49,
+        "proportional_seats": 168,
+        "proportional_seat_pct": 43.52,
+        "difference": -4,
+        "total_seats": 386
+      },
+      {
+        "year": 2006,
+        "short_name": "SZDSZ",
+        "actual_seats": 18,
+        "actual_seat_pct": 4.66,
+        "proportional_seats": 26,
+        "proportional_seat_pct": 6.74,
+        "difference": -8,
+        "total_seats": 386
+      },
+      {
+        "year": 2006,
+        "short_name": "MDF",
+        "actual_seats": 11,
+        "actual_seat_pct": 2.85,
+        "proportional_seats": 20,
+        "proportional_seat_pct": 5.18,
+        "difference": -9,
+        "total_seats": 386
+      }
+    ],
+    "2010": [
+      {
+        "year": 2010,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 263,
+        "actual_seat_pct": 68.13,
+        "proportional_seats": 212,
+        "proportional_seat_pct": 54.92,
+        "difference": 51,
+        "total_seats": 386
+      },
+      {
+        "year": 2010,
+        "short_name": "MSZP",
+        "actual_seats": 59,
+        "actual_seat_pct": 15.28,
+        "proportional_seats": 77,
+        "proportional_seat_pct": 19.95,
+        "difference": -18,
+        "total_seats": 386
+      },
+      {
+        "year": 2010,
+        "short_name": "Jobbik",
+        "actual_seats": 47,
+        "actual_seat_pct": 12.18,
+        "proportional_seats": 67,
+        "proportional_seat_pct": 17.36,
+        "difference": -20,
+        "total_seats": 386
+      },
+      {
+        "year": 2010,
+        "short_name": "LMP",
+        "actual_seats": 16,
+        "actual_seat_pct": 4.15,
+        "proportional_seats": 30,
+        "proportional_seat_pct": 7.77,
+        "difference": -14,
+        "total_seats": 386
+      }
+    ],
+    "2014": [
+      {
+        "year": 2014,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 133,
+        "actual_seat_pct": 66.83,
+        "proportional_seats": 93,
+        "proportional_seat_pct": 46.73,
+        "difference": 40,
+        "total_seats": 199
+      },
+      {
+        "year": 2014,
+        "short_name": "Unity",
+        "actual_seats": 38,
+        "actual_seat_pct": 19.1,
+        "proportional_seats": 53,
+        "proportional_seat_pct": 26.63,
+        "difference": -15,
+        "total_seats": 199
+      },
+      {
+        "year": 2014,
+        "short_name": "Jobbik",
+        "actual_seats": 23,
+        "actual_seat_pct": 11.56,
+        "proportional_seats": 42,
+        "proportional_seat_pct": 21.11,
+        "difference": -19,
+        "total_seats": 199
+      },
+      {
+        "year": 2014,
+        "short_name": "LMP",
+        "actual_seats": 5,
+        "actual_seat_pct": 2.51,
+        "proportional_seats": 11,
+        "proportional_seat_pct": 5.53,
+        "difference": -6,
+        "total_seats": 199
+      }
+    ],
+    "2018": [
+      {
+        "year": 2018,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 133,
+        "actual_seat_pct": 66.83,
+        "proportional_seats": 101,
+        "proportional_seat_pct": 50.75,
+        "difference": 32,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "Jobbik",
+        "actual_seats": 26,
+        "actual_seat_pct": 13.07,
+        "proportional_seats": 39,
+        "proportional_seat_pct": 19.6,
+        "difference": -13,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "MSZP-P",
+        "actual_seats": 20,
+        "actual_seat_pct": 10.05,
+        "proportional_seats": 24,
+        "proportional_seat_pct": 12.06,
+        "difference": -4,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "DK",
+        "actual_seats": 9,
+        "actual_seat_pct": 4.52,
+        "proportional_seats": 11,
+        "proportional_seat_pct": 5.53,
+        "difference": -2,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "LMP",
+        "actual_seats": 8,
+        "actual_seat_pct": 4.02,
+        "proportional_seats": 14,
+        "proportional_seat_pct": 7.04,
+        "difference": -6,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "MM",
+        "actual_seats": 0,
+        "actual_seat_pct": 0.0,
+        "proportional_seats": 6,
+        "proportional_seat_pct": 3.02,
+        "difference": -6,
+        "total_seats": 199
+      },
+      {
+        "year": 2018,
+        "short_name": "MKKP",
+        "actual_seats": 0,
+        "actual_seat_pct": 0.0,
+        "proportional_seats": 4,
+        "proportional_seat_pct": 2.01,
+        "difference": -4,
+        "total_seats": 199
+      }
+    ],
+    "2022": [
+      {
+        "year": 2022,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 135,
+        "actual_seat_pct": 67.84,
+        "proportional_seats": 110,
+        "proportional_seat_pct": 55.28,
+        "difference": 25,
+        "total_seats": 199
+      },
+      {
+        "year": 2022,
+        "short_name": "EM",
+        "actual_seats": 57,
+        "actual_seat_pct": 28.64,
+        "proportional_seats": 70,
+        "proportional_seat_pct": 35.18,
+        "difference": -13,
+        "total_seats": 199
+      },
+      {
+        "year": 2022,
+        "short_name": "Mi Hazánk",
+        "actual_seats": 6,
+        "actual_seat_pct": 3.02,
+        "proportional_seats": 12,
+        "proportional_seat_pct": 6.03,
+        "difference": -6,
+        "total_seats": 199
+      },
+      {
+        "year": 2022,
+        "short_name": "MNOÖ",
+        "actual_seats": 1,
+        "actual_seat_pct": 0.5,
+        "proportional_seats": 1,
+        "proportional_seat_pct": 0.5,
+        "difference": 0,
+        "total_seats": 199
+      },
+      {
+        "year": 2022,
+        "short_name": "MKKP",
+        "actual_seats": 0,
+        "actual_seat_pct": 0.0,
+        "proportional_seats": 7,
+        "proportional_seat_pct": 3.52,
+        "difference": -7,
+        "total_seats": 199
+      }
+    ],
+    "2026": [
+      {
+        "year": 2026,
+        "short_name": "Tisza",
+        "actual_seats": 138,
+        "actual_seat_pct": 69.35,
+        "proportional_seats": 110,
+        "proportional_seat_pct": 55.28,
+        "difference": 28,
+        "total_seats": 199
+      },
+      {
+        "year": 2026,
+        "short_name": "Fidesz-KDNP",
+        "actual_seats": 55,
+        "actual_seat_pct": 27.64,
+        "proportional_seats": 77,
+        "proportional_seat_pct": 38.69,
+        "difference": -22,
+        "total_seats": 199
+      },
+      {
+        "year": 2026,
+        "short_name": "Mi Hazánk",
+        "actual_seats": 6,
+        "actual_seat_pct": 3.02,
+        "proportional_seats": 12,
+        "proportional_seat_pct": 6.03,
+        "difference": -6,
+        "total_seats": 199
+      }
+    ]
+  },
+  "2026_actual": {
+    "Tisza": 138,
+    "Fidesz-KDNP": 55,
+    "Mi Hazánk": 6
+  },
+  "2026_proportional": {
+    "Tisza": 110,
+    "Fidesz-KDNP": 77,
+    "Mi Hazánk": 12
+  },
+  "2026_supermajority_threshold": 133,
+  "tisza_would_have_supermajority_under_pr": false,
+  "key_finding": "Under pure PR, Tisza would get ~110 seats (vs 138 actual), NOT reaching supermajority."
+}

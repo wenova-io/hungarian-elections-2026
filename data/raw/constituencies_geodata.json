@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "collected_at": "2026-04-13T12:00:00Z",
+    "source": "Wikipedia Electoral districts of Hungary",
+    "notes": "District list with county assignment and type classification. GeoJSON boundaries not available from Wikipedia — would require NVI or OSM data. 2026 redistricting moved 2 districts from Budapest to Pest county (Budapest: 18→16, Pest: 12→14)."
+  },
+  "districts_by_county": [
+    {
+      "county": "Budapest",
+      "type": "budapest",
+      "count": 16,
+      "districts": [
+        {"oevk_id": 1, "name": "Budapest 01", "area_description": "I., II., III. kerület (részben)"},
+        {"oevk_id": 2, "name": "Budapest 02", "area_description": "III. kerület (részben), IV. kerület"},
+        {"oevk_id": 3, "name": "Budapest 03", "area_description": "V., VI., VII. kerület"},
+        {"oevk_id": 4, "name": "Budapest 04", "area_description": "VIII., IX. kerület (részben)"},
+        {"oevk_id": 5, "name": "Budapest 05", "area_description": "IX. kerület (részben), X. kerület"},
+        {"oevk_id": 6, "name": "Budapest 06", "area_description": "XI. kerület"},
+        {"oevk_id": 7, "name": "Budapest 07", "area_description": "XII., XXII. kerület"},
+        {"oevk_id": 8, "name": "Budapest 08", "area_description": "XIII. kerület"},
+        {"oevk_id": 9, "name": "Budapest 09", "area_description": "XIV. kerület"},
+        {"oevk_id": 10, "name": "Budapest 10", "area_description": "XV., XVI. kerület (részben)"},
+        {"oevk_id": 11, "name": "Budapest 11", "area_description": "XVI. kerület (részben), XVII. kerület"},
+        {"oevk_id": 12, "name": "Budapest 12", "area_description": "XVIII. kerület"},
+        {"oevk_id": 13, "name": "Budapest 13", "area_description": "XIX., XX. kerület"},
+        {"oevk_id": 14, "name": "Budapest 14", "area_description": "XXI., XXIII. kerület"},
+        {"oevk_id": 15, "name": "Budapest 15", "area_description": "Budai agglomeráció"},
+        {"oevk_id": 16, "name": "Budapest 16", "area_description": "Pesti agglomeráció"}
+      ]
+    },
+    {
+      "county": "Bács-Kiskun",
+      "type": "rural",
+      "count": 6,
+      "districts": [
+        {"oevk_id": 17, "name": "Bács-Kiskun 01", "area_description": "Kecskemét"},
+        {"oevk_id": 18, "name": "Bács-Kiskun 02", "area_description": "Kecskemét környéke"},
+        {"oevk_id": 19, "name": "Bács-Kiskun 03", "area_description": "Baja"},
+        {"oevk_id": 20, "name": "Bács-Kiskun 04", "area_description": "Kiskunfélegyháza"},
+        {"oevk_id": 21, "name": "Bács-Kiskun 05", "area_description": "Kiskunhalas"},
+        {"oevk_id": 22, "name": "Bács-Kiskun 06", "area_description": "Kalocsa"}
+      ]
+    },
+    {
+      "county": "Baranya",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 23, "name": "Baranya 01", "area_description": "Pécs belváros"},
+        {"oevk_id": 24, "name": "Baranya 02", "area_description": "Pécs külváros"},
+        {"oevk_id": 25, "name": "Baranya 03", "area_description": "Mohács"},
+        {"oevk_id": 26, "name": "Baranya 04", "area_description": "Szigetvár"}
+      ]
+    },
+    {
+      "county": "Békés",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 27, "name": "Békés 01", "area_description": "Békéscsaba"},
+        {"oevk_id": 28, "name": "Békés 02", "area_description": "Gyula"},
+        {"oevk_id": 29, "name": "Békés 03", "area_description": "Orosháza"},
+        {"oevk_id": 30, "name": "Békés 04", "area_description": "Szarvas"}
+      ]
+    },
+    {
+      "county": "Borsod-Abaúj-Zemplén",
+      "type": "rural",
+      "count": 7,
+      "districts": [
+        {"oevk_id": 31, "name": "BAZ 01", "area_description": "Miskolc belváros"},
+        {"oevk_id": 32, "name": "BAZ 02", "area_description": "Miskolc külváros"},
+        {"oevk_id": 33, "name": "BAZ 03", "area_description": "Kazincbarcika"},
+        {"oevk_id": 34, "name": "BAZ 04", "area_description": "Ózd"},
+        {"oevk_id": 35, "name": "BAZ 05", "area_description": "Tiszaújváros"},
+        {"oevk_id": 36, "name": "BAZ 06", "area_description": "Sátoraljaújhely"},
+        {"oevk_id": 37, "name": "BAZ 07", "area_description": "Szerencs"}
+      ]
+    },
+    {
+      "county": "Csongrád-Csanád",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 38, "name": "Csongrád 01", "area_description": "Szeged belváros"},
+        {"oevk_id": 39, "name": "Csongrád 02", "area_description": "Szeged külváros"},
+        {"oevk_id": 40, "name": "Csongrád 03", "area_description": "Hódmezővásárhely"},
+        {"oevk_id": 41, "name": "Csongrád 04", "area_description": "Szentes"}
+      ]
+    },
+    {
+      "county": "Fejér",
+      "type": "rural",
+      "count": 5,
+      "districts": [
+        {"oevk_id": 42, "name": "Fejér 01", "area_description": "Székesfehérvár belváros"},
+        {"oevk_id": 43, "name": "Fejér 02", "area_description": "Székesfehérvár külváros"},
+        {"oevk_id": 44, "name": "Fejér 03", "area_description": "Dunaújváros"},
+        {"oevk_id": 45, "name": "Fejér 04", "area_description": "Bicske"},
+        {"oevk_id": 46, "name": "Fejér 05", "area_description": "Sárbogárd"}
+      ]
+    },
+    {
+      "county": "Győr-Moson-Sopron",
+      "type": "rural",
+      "count": 5,
+      "districts": [
+        {"oevk_id": 47, "name": "GyMS 01", "area_description": "Győr belváros"},
+        {"oevk_id": 48, "name": "GyMS 02", "area_description": "Győr külváros"},
+        {"oevk_id": 49, "name": "GyMS 03", "area_description": "Sopron"},
+        {"oevk_id": 50, "name": "GyMS 04", "area_description": "Mosonmagyaróvár"},
+        {"oevk_id": 51, "name": "GyMS 05", "area_description": "Csorna"}
+      ]
+    },
+    {
+      "county": "Hajdú-Bihar",
+      "type": "rural",
+      "count": 6,
+      "districts": [
+        {"oevk_id": 52, "name": "Hajdú-Bihar 01", "area_description": "Debrecen belváros"},
+        {"oevk_id": 53, "name": "Hajdú-Bihar 02", "area_description": "Debrecen külváros"},
+        {"oevk_id": 54, "name": "Hajdú-Bihar 03", "area_description": "Debrecen agglomeráció"},
+        {"oevk_id": 55, "name": "Hajdú-Bihar 04", "area_description": "Hajdúböszörmény"},
+        {"oevk_id": 56, "name": "Hajdú-Bihar 05", "area_description": "Hajdúszoboszló"},
+        {"oevk_id": 57, "name": "Hajdú-Bihar 06", "area_description": "Berettyóújfalu"}
+      ]
+    },
+    {
+      "county": "Heves",
+      "type": "rural",
+      "count": 3,
+      "districts": [
+        {"oevk_id": 58, "name": "Heves 01", "area_description": "Eger"},
+        {"oevk_id": 59, "name": "Heves 02", "area_description": "Gyöngyös"},
+        {"oevk_id": 60, "name": "Heves 03", "area_description": "Hatvan"}
+      ]
+    },
+    {
+      "county": "Jász-Nagykun-Szolnok",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 61, "name": "JNSz 01", "area_description": "Szolnok"},
+        {"oevk_id": 62, "name": "JNSz 02", "area_description": "Jászberény"},
+        {"oevk_id": 63, "name": "JNSz 03", "area_description": "Karcag"},
+        {"oevk_id": 64, "name": "JNSz 04", "area_description": "Törökszentmiklós"}
+      ]
+    },
+    {
+      "county": "Komárom-Esztergom",
+      "type": "rural",
+      "count": 3,
+      "districts": [
+        {"oevk_id": 65, "name": "KE 01", "area_description": "Tatabánya"},
+        {"oevk_id": 66, "name": "KE 02", "area_description": "Esztergom"},
+        {"oevk_id": 67, "name": "KE 03", "area_description": "Komárom"}
+      ]
+    },
+    {
+      "county": "Nógrád",
+      "type": "rural",
+      "count": 2,
+      "districts": [
+        {"oevk_id": 68, "name": "Nógrád 01", "area_description": "Salgótarján"},
+        {"oevk_id": 69, "name": "Nógrád 02", "area_description": "Balassagyarmat"}
+      ]
+    },
+    {
+      "county": "Pest",
+      "type": "suburban",
+      "count": 14,
+      "districts": [
+        {"oevk_id": 70, "name": "Pest 01", "area_description": "Budaörs, Érd észak"},
+        {"oevk_id": 71, "name": "Pest 02", "area_description": "Érd"},
+        {"oevk_id": 72, "name": "Pest 03", "area_description": "Szigetszentmiklós"},
+        {"oevk_id": 73, "name": "Pest 04", "area_description": "Dabas, Ráckeve"},
+        {"oevk_id": 74, "name": "Pest 05", "area_description": "Cegléd"},
+        {"oevk_id": 75, "name": "Pest 06", "area_description": "Monor, Nagykőrös"},
+        {"oevk_id": 76, "name": "Pest 07", "area_description": "Gödöllő"},
+        {"oevk_id": 77, "name": "Pest 08", "area_description": "Dunakeszi"},
+        {"oevk_id": 78, "name": "Pest 09", "area_description": "Vác"},
+        {"oevk_id": 79, "name": "Pest 10", "area_description": "Szentendre"},
+        {"oevk_id": 80, "name": "Pest 11", "area_description": "Budakeszi, Pilisvörösvár"},
+        {"oevk_id": 81, "name": "Pest 12", "area_description": "Vecsés, Gyál"},
+        {"oevk_id": 82, "name": "Pest 13", "area_description": "Fót, Csomád"},
+        {"oevk_id": 83, "name": "Pest 14", "area_description": "Nagykáta, Aszód"}
+      ]
+    },
+    {
+      "county": "Somogy",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 84, "name": "Somogy 01", "area_description": "Kaposvár"},
+        {"oevk_id": 85, "name": "Somogy 02", "area_description": "Siófok"},
+        {"oevk_id": 86, "name": "Somogy 03", "area_description": "Marcali"},
+        {"oevk_id": 87, "name": "Somogy 04", "area_description": "Nagyatád"}
+      ]
+    },
+    {
+      "county": "Szabolcs-Szatmár-Bereg",
+      "type": "rural",
+      "count": 6,
+      "districts": [
+        {"oevk_id": 88, "name": "SzSzB 01", "area_description": "Nyíregyháza belváros"},
+        {"oevk_id": 89, "name": "SzSzB 02", "area_description": "Nyíregyháza külváros"},
+        {"oevk_id": 90, "name": "SzSzB 03", "area_description": "Kisvárda"},
+        {"oevk_id": 91, "name": "SzSzB 04", "area_description": "Mátészalka"},
+        {"oevk_id": 92, "name": "SzSzB 05", "area_description": "Fehérgyarmat"},
+        {"oevk_id": 93, "name": "SzSzB 06", "area_description": "Vásárosnamény"}
+      ]
+    },
+    {
+      "county": "Tolna",
+      "type": "rural",
+      "count": 3,
+      "districts": [
+        {"oevk_id": 94, "name": "Tolna 01", "area_description": "Szekszárd"},
+        {"oevk_id": 95, "name": "Tolna 02", "area_description": "Paks"},
+        {"oevk_id": 96, "name": "Tolna 03", "area_description": "Dombóvár"}
+      ]
+    },
+    {
+      "county": "Vas",
+      "type": "rural",
+      "count": 3,
+      "districts": [
+        {"oevk_id": 97, "name": "Vas 01", "area_description": "Szombathely"},
+        {"oevk_id": 98, "name": "Vas 02", "area_description": "Sárvár"},
+        {"oevk_id": 99, "name": "Vas 03", "area_description": "Körmend"}
+      ]
+    },
+    {
+      "county": "Veszprém",
+      "type": "rural",
+      "count": 4,
+      "districts": [
+        {"oevk_id": 100, "name": "Veszprém 01", "area_description": "Veszprém"},
+        {"oevk_id": 101, "name": "Veszprém 02", "area_description": "Ajka"},
+        {"oevk_id": 102, "name": "Veszprém 03", "area_description": "Pápa"},
+        {"oevk_id": 103, "name": "Veszprém 04", "area_description": "Balatonfüred"}
+      ]
+    },
+    {
+      "county": "Zala",
+      "type": "rural",
+      "count": 3,
+      "districts": [
+        {"oevk_id": 104, "name": "Zala 01", "area_description": "Zalaegerszeg"},
+        {"oevk_id": 105, "name": "Zala 02", "area_description": "Nagykanizsa"},
+        {"oevk_id": 106, "name": "Zala 03", "area_description": "Keszthely"}
+      ]
+    }
+  ]
+}

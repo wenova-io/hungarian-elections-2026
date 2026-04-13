@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Orbán's Gerrymandering Backfired — Hungary 2026 Election Data</title>
+  <meta name="description" content="Data-driven analysis of Hungary's historic 2026 parliamentary election. Gerrymandering, rural swing, turnout records, and electoral reform.">
+  <meta property="og:title" content="Hungary 2026: The Weapon That Killed Its Creator">
+  <meta property="og:description" content="Interactive data analysis of how Orbán's gerrymandering system was turned against him">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tisza: '#1a5c9e',
+            tiszaLight: '#3b82d4',
+            fidesz: '#f97316',
+            fideszLight: '#fb923c',
+            miHazank: '#7c3aed',
+            accent: '#f0c040',
+            bgDark: '#0a0e1a',
+            bgCard: '#0f1525',
+            bgCard2: '#151d30',
+            textMain: '#e8ecf4',
+            textDim: '#8892a8',
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'Georgia', 'serif'],
+            mono: ['IBM Plex Mono', 'monospace'],
+            body: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { background: #0a0e1a; color: #e8ecf4; font-family: 'IBM Plex Sans', sans-serif; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .font-mono { font-family: 'IBM Plex Mono', monospace; }
+    .nav-link { transition: all 0.2s; }
+    .nav-link:hover, .nav-link.active { color: #3b82d4; border-bottom: 2px solid #3b82d4; }
+    .stat-glow { box-shadow: 0 0 30px rgba(26,92,158,0.15); }
+    .section-visible { opacity: 1; transform: translateY(0); }
+    .section-hidden { opacity: 0; transform: translateY(20px); }
+    section { transition: opacity 0.6s ease, transform 0.6s ease; }
+    .verdict-badge { padding: 2px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .verdict-supported { background: rgba(34,197,94,0.15); color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+    .verdict-partial { background: rgba(240,192,64,0.15); color: #f0c040; border: 1px solid rgba(240,192,64,0.3); }
+    .chart-container { background: #0f1525; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
+    svg text { font-family: 'IBM Plex Sans', sans-serif; }
+    .tooltip { position: absolute; padding: 8px 12px; background: #1a2235; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; font-size: 13px; pointer-events: none; z-index: 50; opacity: 0; transition: opacity 0.2s; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-bgDark/90 backdrop-blur border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
+      <a href="#" class="font-display font-bold text-lg text-tisza">HU 2026</a>
+      <div class="flex gap-6 text-sm font-medium text-textDim">
+        <a href="#hero" class="nav-link active pb-1">Home</a>
+        <a href="#gallagher" class="nav-link pb-1">Gallagher</a>
+        <a href="#rural" class="nav-link pb-1">Rural/Urban</a>
+        <a href="#turnout" class="nav-link pb-1">Turnout</a>
+        <a href="#reform" class="nav-link pb-1">Reform</a>
+        <a href="#timeline" class="nav-link pb-1">Timeline</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="pt-24 pb-16 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="font-display text-5xl md:text-7xl font-black leading-tight mb-6">
+        How Orbán's Weapon<br><span class="text-tisza">Backfired</span>
+      </h1>
+      <p class="text-xl text-textDim max-w-2xl mx-auto mb-12">
+        The data behind Hungary's historic 2026 election — where the gerrymander designed to be unbeatable was beaten by its own logic
+      </p>
+
+      <!-- Key Stats Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div class="bg-bgCard rounded-xl p-5 stat-glow">
+          <div class="font-mono text-3xl font-bold text-tisza">53.7%</div>
+          <div class="text-textDim text-sm mt-1">Tisza vote share</div>
+          <div class="font-mono text-lg text-accent">→ 69.3% seats</div>
+        </div>
+        <div class="bg-bgCard rounded-xl p-5 stat-glow">
+          <div class="font-mono text-3xl font-bold text-accent">79.5%</div>
+          <div class="text-textDim text-sm mt-1">Record turnout</div>
+          <div class="text-textDim text-xs">Highest since 1990</div>
+        </div>
+        <div class="bg-bgCard rounded-xl p-5 stat-glow">
+          <div class="font-mono text-3xl font-bold text-tiszaLight">93/106</div>
+          <div class="text-textDim text-sm mt-1">Constituencies won</div>
+          <div class="text-textDim text-xs">74 flipped from Fidesz</div>
+        </div>
+        <div class="bg-bgCard rounded-xl p-5 stat-glow">
+          <div class="font-mono text-3xl font-bold text-white">13.36</div>
+          <div class="text-textDim text-sm mt-1">Gallagher Index</div>
+          <div class="text-textDim text-xs">≈ Fidesz era avg (13.49)</div>
+        </div>
+      </div>
+
+      <!-- Hypothesis Cards -->
+      <div class="grid md:grid-cols-2 gap-4 text-left max-w-4xl mx-auto mb-16">
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5 hover:border-tisza/30 transition">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="font-mono text-tisza font-bold">H1</span>
+            <span class="verdict-badge verdict-supported">Strongly Supported</span>
+          </div>
+          <h3 class="font-semibold mb-2">Rural Penetration Was Key</h3>
+          <p class="text-textDim text-sm">Tisza won 40+ rural constituencies gerrymandered for Fidesz — 55% of all flips. Without rural wins, no supermajority.</p>
+        </div>
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5 hover:border-accent/30 transition">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="font-mono text-accent font-bold">H2</span>
+            <span class="verdict-badge verdict-partial">Partial</span>
+          </div>
+          <h3 class="font-semibold mb-2">Record Turnout Was Broad-Based</h3>
+          <p class="text-textDim text-sm">79.5% turnout was historic (+9.9pp), but OEVK-level data needed to confirm disproportionate rural/young mobilization.</p>
+        </div>
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5 hover:border-green-500/30 transition">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="font-mono text-green-400 font-bold">H3</span>
+            <span class="verdict-badge verdict-supported">Strongly Supported</span>
+          </div>
+          <h3 class="font-semibold mb-2">The Gerrymander Boomeranged</h3>
+          <p class="text-textDim text-sm">Gallagher index 2026 (13.36) nearly identical to Fidesz era average (13.49). Same distortion, different beneficiary.</p>
+        </div>
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5 hover:border-red-500/30 transition">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="font-mono text-red-400 font-bold">H4</span>
+            <span class="verdict-badge verdict-supported">Strongly Supported</span>
+          </div>
+          <h3 class="font-semibold mb-2">Reform Is Structurally Necessary</h3>
+          <p class="text-textDim text-sm">Under pure PR, Tisza governs but has ~110 seats — no supermajority. The system, not the voters, creates constitutional power.</p>
+        </div>
+      </div>
+
+      <!-- Parliament Semicircle -->
+      <div class="chart-container p-6 max-w-4xl mx-auto">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="font-display text-2xl font-bold">Parliament 2026</h2>
+          <div class="flex gap-2">
+            <button id="btn-actual" class="px-4 py-1.5 rounded-full text-sm font-medium bg-tisza/20 text-tisza border border-tisza/30 transition hover:bg-tisza/30" onclick="drawParliament('actual')">Actual Result</button>
+            <button id="btn-pr" class="px-4 py-1.5 rounded-full text-sm font-medium bg-bgCard2 text-textDim border border-white/10 transition hover:bg-white/5" onclick="drawParliament('proportional')">Under Pure PR</button>
+          </div>
+        </div>
+        <div id="parliament-chart" class="flex justify-center"></div>
+        <div class="flex justify-center gap-8 mt-4 text-sm">
+          <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-tisza"></div> Tisza</div>
+          <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-fidesz"></div> Fidesz-KDNP</div>
+          <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full" style="background:#7c3aed"></div> Mi Hazánk</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallagher Index Timeline -->
+  <section id="gallagher" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">The Gallagher Index</h2>
+      <p class="text-textDim mb-8 max-w-2xl">Measures how disproportional seats are versus votes. Higher = more distorted. The Fidesz-era average (2010–2022) is shaded.</p>
+      <div class="chart-container p-6">
+        <div id="gallagher-chart"></div>
+      </div>
+      <div class="mt-6 bg-bgCard rounded-xl p-6 border border-white/5">
+        <p class="text-textDim"><span class="text-white font-semibold">Key finding:</span> The 2026 Gallagher index of <span class="font-mono text-tisza">13.36</span> is virtually identical to the Fidesz-era average of <span class="font-mono text-fidesz">13.49</span>. The system didn't change — only who it benefited.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rural vs Urban -->
+  <section id="rural" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">Rural Penetration: The Key to Supermajority</h2>
+      <p class="text-textDim mb-8 max-w-2xl">Tisza didn't just win cities. It broke into the rural heartlands Fidesz had gerrymandered for itself.</p>
+      <div class="chart-container p-6">
+        <div id="rural-chart"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mt-6">
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5">
+          <div class="font-mono text-2xl text-tisza font-bold">74</div>
+          <div class="text-textDim text-sm">Constituencies flipped Fidesz → Tisza</div>
+        </div>
+        <div class="bg-bgCard rounded-xl p-6 border border-white/5">
+          <div class="font-mono text-2xl text-accent font-bold">~41</div>
+          <div class="text-textDim text-sm">Of those were rural — 55% of all flips</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Turnout -->
+  <section id="turnout" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">Record Turnout</h2>
+      <p class="text-textDim mb-8 max-w-2xl">79.5% — the highest participation since the fall of communism. Nearly 10 percentage points above 2022.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="chart-container p-6">
+          <h3 class="font-semibold mb-4">Historical Turnout (1990–2026)</h3>
+          <div id="turnout-history-chart"></div>
+        </div>
+        <div class="chart-container p-6">
+          <h3 class="font-semibold mb-4">Election Day 2026 vs 2022</h3>
+          <div id="turnout-intraday-chart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seat/Vote Disparity -->
+  <section id="disparity" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">Seat vs Vote Disparity</h2>
+      <p class="text-textDim mb-8 max-w-2xl">How many "bonus seats" did each winner get beyond their proportional share?</p>
+      <div class="chart-container p-6">
+        <div id="disparity-chart"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reform Simulation -->
+  <section id="reform" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-2">What If? Electoral Reform Simulation</h2>
+      <p class="text-textDim mb-8 max-w-2xl">Under a fairer system, Tisza still governs — but cannot unilaterally rewrite the constitution.</p>
+      <div class="chart-container p-6">
+        <div class="flex gap-3 mb-6 flex-wrap">
+          <button onclick="showReform('actual')" id="reform-actual" class="px-4 py-2 rounded-full text-sm font-medium bg-tisza/20 text-tisza border border-tisza/30">Current System (Actual)</button>
+          <button onclick="showReform('pr')" id="reform-pr" class="px-4 py-2 rounded-full text-sm font-medium bg-bgCard2 text-textDim border border-white/10">Pure Proportional</button>
+          <button onclick="showReform('mmp')" id="reform-mmp" class="px-4 py-2 rounded-full text-sm font-medium bg-bgCard2 text-textDim border border-white/10">German MMP</button>
+        </div>
+        <div id="reform-chart" class="flex justify-center"></div>
+        <div id="reform-table" class="mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Election Timeline -->
+  <section id="timeline" class="py-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-8">36 Years of Hungarian Democracy</h2>
+      <div id="timeline-container" class="chart-container p-6">
+        <div id="timeline-chart"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology" class="py-16 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-display text-2xl font-bold mb-4">Methodology</h2>
+      <div class="text-textDim text-sm space-y-3">
+        <p>All data sourced from Wikipedia election pages and the Hungarian National Election Office (NVI). 2026 results at 98.78% reporting.</p>
+        <p>The <strong class="text-white">Gallagher index</strong> (Least Squares index) is calculated as: LSq = √(½ × Σ(vᵢ − sᵢ)²), where vᵢ is vote share and sᵢ is seat share for party i.</p>
+        <p>Proportional seat allocation uses simple quota (vote% × total seats), rounded. German MMP simulation assumes overhang seats are kept.</p>
+        <p>County-level constituency breakdowns for 2026 are estimated where individual OEVK data was unavailable. All estimates are flagged.</p>
+        <p class="text-textDim/60">Built with D3.js. Data pipeline: Python + SQLite. Analysis: 4 hypotheses tested against 10 elections (1990–2026).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-4 border-t border-white/5">
+    <div class="max-w-5xl mx-auto text-center text-textDim text-sm">
+      <p>Hungary 2026 Election Analysis — Data collected April 13, 2026</p>
+      <p class="mt-1 text-textDim/50">Open source research project. All data from public sources.</p>
+    </div>
+  </footer>
+
+  <div id="tooltip" class="tooltip"></div>
+
+  <script src="data.js"></script>
+  <script src="charts.js"></script>
+</body>
+</html>

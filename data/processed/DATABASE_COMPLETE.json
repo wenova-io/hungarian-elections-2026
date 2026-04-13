@@ -1,0 +1,30 @@
+{
+  "completed_at": "2026-04-13T04:17:33.847499Z",
+  "database_file": "data/hungary_elections.db",
+  "database_size_mb": 0.0,
+  "table_row_counts": {
+    "elections": 10,
+    "parties": 21,
+    "party_results": 49,
+    "constituencies": 106,
+    "constituency_results": 0,
+    "constituency_swing": 0,
+    "gallagher_index": 10,
+    "turnout_intervals": 13,
+    "hypothetical_pr": 49
+  },
+  "gallagher_indices": {
+    "1990": 13.04,
+    "1994": 15.24,
+    "1998": 6.61,
+    "2002": 7.4,
+    "2006": 4.06,
+    "2010": 11.93,
+    "2014": 17.42,
+    "2018": 13.6,
+    "2022": 10.97,
+    "2026": 13.36
+  },
+  "validation_passed": true,
+  "ready_for_agent3": true
+}

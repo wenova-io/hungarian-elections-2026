@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-04-13T04:19:44.772601+00:00",
+  "headline_numbers": {
+    "tisza_vote_pct_2026": 53.65,
+    "tisza_seat_pct_2026": 69.35,
+    "distortion_pp": 15.7,
+    "fidesz_constituencies_won_2026": 13,
+    "tisza_constituencies_won_2026": 93,
+    "fidesz_to_tisza_flipped": 74,
+    "rural_flipped": 41,
+    "turnout_2026": 79.51,
+    "turnout_2022": 69.59,
+    "turnout_increase_pp": 9.92,
+    "is_record_turnout_since_1990": true,
+    "gallagher_index_2026": 13.36,
+    "gallagher_index_avg_fidesz_2010_2022": 13.48,
+    "tisza_would_have_supermajority_under_pr": false,
+    "extra_voters_2026_vs_2022": 268277
+  },
+  "hypothesis_verdicts": {
+    "H1_rural_penetration": {
+      "verdict": "STRONGLY SUPPORTED",
+      "summary": "Tisza won ~40 rural constituencies that Fidesz gerrymandered for itself, constituting 55% of all flips"
+    },
+    "H2_record_turnout": {
+      "verdict": "PARTIAL",
+      "summary": "Record 79.51% turnout was broad-based; rural/young breakdown unavailable at OEVK level"
+    },
+    "H3_same_weapon": {
+      "verdict": "STRONGLY SUPPORTED",
+      "summary": "2026 Gallagher index (13.36) comparable to Fidesz era avg (13.48)"
+    },
+    "H4_reform_needed": {
+      "verdict": "STRONGLY SUPPORTED",
+      "summary": "Under any proportional system, Tisza governs but lacks supermajority. Reform is structurally justified."
+    }
+  },
+  "election_timeline": {
+    "1990": 65.11,
+    "1994": 68.92,
+    "1998": 56.21,
+    "2002": 70.47,
+    "2006": 67.83,
+    "2010": 64.35,
+    "2014": 61.73,
+    "2018": 69.73,
+    "2022": 69.59,
+    "2026": 79.51
+  }
+}
